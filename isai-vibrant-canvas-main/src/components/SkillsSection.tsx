@@ -4,32 +4,72 @@ import TiltCard from "./TiltCard";
 
 const categories: { title: string; items: string[] }[] = [
   {
-    title: "Languages & frontend",
-    items: ["Java", "JavaScript", "React", "HTML", "CSS", "JSON"],
+    title: "Languages & Frontend",
+    items: [
+      "Java",
+      "Python",
+      "C",
+      "JavaScript",
+      "React.js",
+      "HTML",
+      "CSS",
+      "JSON",
+    ],
   },
   {
-    title: "Backend & server",
-    items: ["JSP", "Node.js", "Apache Tomcat"],
+    title: "Backend & Server",
+    items: [
+      "Spring Boot",
+      "Node.js",
+      "JSP",
+      "Apache Tomcat",
+    ],
   },
-  { title: "Database", items: ["MySQL"] },
   {
-    title: "Tools & platforms",
+    title: "Database",
+    items: ["MySQL"],
+  },
+  {
+    title: "Tools & Platforms",
     items: [
       "Git",
       "GitHub",
       "VS Code",
+      "IntelliJ IDEA",
       "Eclipse",
       "Postman",
-      "Firebase",
-      "Adobe Photoshop",
       "Cursor",
       "Lovable",
       "Bolt",
+      "Antigravity",
+      "Codex",
+      "GitHub Copilot",
+      "Claude",
     ],
   },
   {
-    title: "AI & automation",
-    items: ["Prompt Engineering (Basic)", "n8n"],
+    title: "AI & Automation",
+    items: [
+      "Prompt Engineering (Basic)",
+      "n8n",
+    ],
+  },
+  {
+    title: "Cloud & Concepts",
+    items: [
+      "Cloud Computing Basics",
+    ],
+  },
+  {
+    title: "Interpersonal Skills",
+    items: [
+      "Effective Communication",
+      "Logical & Analytical Thinking",
+      "Problem-Solving Ability",
+      "Team Collaboration",
+      "Adaptability",
+      "Continuous Learning",
+    ],
   },
 ];
 
@@ -50,6 +90,7 @@ const SkillsSection = () => {
         >
           Skills <span className="gradient-text">& Stack</span>
         </motion.h2>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
@@ -66,13 +107,18 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 28 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.45, delay: 0.08 + i * 0.06 }}
-              className={cat.title === "Tools & platforms" ? "sm:col-span-2 lg:col-span-3" : ""}
+              className={
+                cat.title === "Tools & Platforms"
+                  ? "sm:col-span-2 lg:col-span-3"
+                  : ""
+              }
             >
               <TiltCard tiltMaxAngleX={8} tiltMaxAngleY={8} scale={1.02}>
                 <div className="glass rounded-2xl p-6 h-full min-h-[140px] glow-hover border border-border/50 hover:border-white/15 transition-colors group">
                   <h3 className="text-sm font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
                     {cat.title}
                   </h3>
+
                   <ul className="flex flex-wrap gap-2">
                     {cat.items.map((skill) => (
                       <li
