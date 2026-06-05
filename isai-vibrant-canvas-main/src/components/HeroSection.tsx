@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, ChevronRight } from "lucide-react";
 import portraitImg from "@/assets/portrait.png";
 
-const TECH_LINE = "React | Java | Node | MySQL";
+const TECH_LINE = "React | Java | Spring boot | MySQL";
 
 const HeroSection = () => {
   const [typed, setTyped] = useState("");
