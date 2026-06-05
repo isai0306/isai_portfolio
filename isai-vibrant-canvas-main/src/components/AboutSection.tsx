@@ -41,10 +41,9 @@ const AboutSection = () => {
             transition={{ delay: 0.12 }}
             className="text-muted-foreground max-w-3xl mx-auto leading-relaxed text-base sm:text-lg mb-3"
           >
-            <span className="text-foreground/90 font-medium">Objective.</span> Detail-oriented Computer
-            Science Engineering student seeking an internship to apply strong full stack development
-            skills in building reliable and scalable web applications, while contributing to
-            organizational goals and growing technical expertise.
+            <span className="text-foreground/90 font-medium">Objective.</span> Analytical software developer skilled in Java, Spring Boot, React.js, JavaScript, and Python.
+Built scalable web applications through academic and internship projects.Passionate about
+building efficient software solutions and continuously improving technical expertise
           </motion.p>
         </motion.div>
 
